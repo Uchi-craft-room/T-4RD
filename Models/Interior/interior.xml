@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<path>interior.ac</path>
+
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>HUDglass</object-name>
+  </animation>
+
+   <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>HUDglass</object-name>
+    <object-name>Sphere</object-name>
+   </effect>
+
+
+  <!-- Pilot -->
+  <model>
+    <name>Pilote</name>
+    <path>Aircraft/T-4RD/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2.900 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.180 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TourPilot -->
+  <model>
+    <name>TourPilote</name>
+    <path>Aircraft/T-4RD/Models/Pilot/tourpilot.xml</path>
+    <offsets>
+      <x-m>  -1.350 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.450 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pilot seat-->
+  <model>
+    <name>Pilot seat</name>
+    <path>Aircraft/T-4RD/Models/Interior/seat/seat.ac</path>
+    <offsets>
+      <x-m>  -0.100 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  -0.030 </z-m>
+    </offsets>
+  </model>
+
+  <!--TourPilot seat-->
+  <model>
+    <name>TourPilot seat</name>
+    <path>Aircraft/T-4RD/Models/Interior/seat/seat-Rr.ac</path>
+    <offsets>
+      <x-m>  1.500 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.250 </z-m>
+    </offsets>
+  </model>
+
+
+  <!-- ASI --> 
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/asi/asi.xml</path>
+    <offsets>
+      <x-m> -3.615 </x-m>
+      <y-m> -0.123</y-m>
+      <z-m> 0.345 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/asi/asi.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.123</y-m>
+      <z-m>  0.620 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- ADI --> 
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/adi/adi.xml</path>
+    <offsets>
+      <x-m> -3.610 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.283 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/adi/adi.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.620 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- HSI --> 
+  <model>
+     <path>Aircraft/T-4RD/Models/Interior/Panel/hsi/A-10-HSI.xml</path>
+    <offsets>
+       <x-m> -3.605 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.167 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+     <path>Aircraft/T-4RD/Models/Interior/Panel/hsi/A-10-HSI.xml</path>
+    <offsets>
+      <x-m>-1.987 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.495 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- HUD-panel --> 
+  <model>
+     <path>Aircraft/T-4RD/Models/Interior/Panel/hud/hud-panel.xml</path>
+    <offsets>
+       <x-m> -3.510 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.450 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+  <!-- ALT --> 
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/alt/alt.xml</path>
+    <offsets>
+      <x-m>  -3.620</x-m>
+      <y-m> 0.125 </y-m>
+      <z-m> 0.345 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/alt/alt.xml</path>
+    <offsets>
+      <x-m>-1.990 </x-m>
+      <y-m> 0.124 </y-m>
+      <z-m> 0.620 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--ACC-->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/acc/accel.xml</path>
+    <offsets>
+       <x-m> -3.610 </x-m>
+      <y-m> -0.195 </y-m>
+      <z-m> 0.440 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/acc/accel.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.190 </y-m>
+      <z-m>  0.710 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- AOA -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/aoa/aoa.xml</path>
+    <offsets>
+      <x-m> -3.610 </x-m>
+      <y-m> -0.113 </y-m>
+      <z-m> 0.440 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/aoa/aoa.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.110 </y-m>
+      <z-m>  0.710 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- VSI --> 
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/vsi/vsi-6kfpm.xml</path>
+    <offsets>
+      <x-m>  -3.605</x-m>
+      <y-m>  0.123 </y-m>
+      <z-m> 0.260 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/vsi/vsi-6kfpm.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m>  0.123 </y-m>
+      <z-m> 0.520 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- N1 RH -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/rpm/rpm-RH.xml</path>
+    <offsets>
+       <x-m> -3.610 </x-m>
+      <y-m> 0.265 </y-m>
+      <z-m> 0.390 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/rpm/rpm-RH.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> 0.265 </y-m>
+      <z-m> 0.660 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- N1 LH-->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/rpm/rpm-LH.xml</path>
+    <offsets>
+       <x-m> -3.610 </x-m>
+      <y-m> 0.205 </y-m>
+      <z-m> 0.390 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/rpm/rpm-LH.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> 0.205 </y-m>
+      <z-m> 0.660 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--tgt-RH -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/tgt/tgt-RH.xml</path>
+    <offsets>
+       <x-m> -3.615 </x-m>
+      <y-m> 0.265 </y-m>
+      <z-m> 0.330 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/tgt/tgt-RH.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m>  0.265 </y-m>
+      <z-m>  0.600 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--tgt-LH -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/tgt/tgt-LH.xml</path>
+    <offsets>
+       <x-m> -3.615 </x-m>
+      <y-m> 0.205 </y-m>
+      <z-m> 0.330 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/tgt/tgt-LH.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m>  0.205 </y-m>
+      <z-m>  0.600 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--ff-RH -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/ff/ff-RH.xml</path>
+    <offsets>
+       <x-m> -3.615 </x-m>
+      <y-m> 0.265 </y-m>
+      <z-m> 0.270 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/ff/ff-RH.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m>  0.265 </y-m>
+      <z-m>  0.540 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--ff-LH -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/ff/ff-LH.xml</path>
+    <offsets>
+       <x-m> -3.615 </x-m>
+      <y-m> 0.205 </y-m>
+      <z-m> 0.270 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/ff/ff-LH.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m>  0.205 </y-m>
+      <z-m>  0.540 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--oil-temp-RH-->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/oil-t/oil-t-RH.xml</path>
+    <offsets>
+       <x-m> -3.615 </x-m>
+      <y-m> 0.265 </y-m>
+      <z-m> 0.220 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/oil-t/oil-t-RH.xml</path>
+    <offsets>
+      <x-m> -1.995 </x-m>
+      <y-m>  0.265 </y-m>
+      <z-m>  0.490 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--oil-temp-LH-->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/oil-t/oil-t-LH.xml</path>
+    <offsets>
+       <x-m> -3.615 </x-m>
+      <y-m> 0.205 </y-m>
+      <z-m> 0.220 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/oil-t/oil-t-LH.xml</path>
+    <offsets>
+      <x-m> -1.995 </x-m>
+      <y-m>  0.205 </y-m>
+      <z-m>  0.490 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--HYD-RH-->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/hyd/hyd-RH.xml</path>
+    <offsets>
+       <x-m> -3.615 </x-m>
+      <y-m> 0.265 </y-m>
+      <z-m> 0.185 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/hyd/hyd-RH.xml</path>
+    <offsets>
+      <x-m> -1.995 </x-m>
+      <y-m> 0.265 </y-m>
+      <z-m> 0.455 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--HYD-LH-->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/hyd/hyd-LH.xml</path>
+    <offsets>
+      <x-m> -3.615 </x-m>
+      <y-m>  0.205 </y-m>
+      <z-m>  0.185 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/hyd/hyd-LH.xml</path>
+    <offsets>
+      <x-m> -1.995 </x-m>
+      <y-m>  0.205 </y-m>
+      <z-m>  0.455 </z-m>
+      <roll-deg>  0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- stdby-adi -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/stdby-adi/stdby-adi.xml</path>
+    <offsets>
+       <x-m> -3.618 </x-m>
+      <y-m> -0.209 </y-m>
+      <z-m> 0.333 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/stdby-adi/stdby-adi.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.209 </y-m>
+      <z-m>  0.610 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- engine caution --> 
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/caution/eng-caution-RH.xml</path>
+    <offsets>
+      <x-m> -3.615 </x-m>
+      <y-m> 0.265 </y-m>
+      <z-m> 0.430 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/caution/eng-caution-LH.xml</path>
+    <offsets>
+      <x-m> -3.615 </x-m>
+      <y-m> 0.205 </y-m>
+      <z-m> 0.430 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/caution/eng-caution-RH.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> 0.265 </y-m>
+      <z-m> 0.700 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/caution/eng-caution-LH.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> 0.205 </y-m>
+      <z-m> 0.700 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- MASTER caution -->
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/caution/master-caution.xml</path>
+    <offsets>
+      <x-m> -3.615 </x-m>
+      <y-m> 0.120 </y-m>
+      <z-m> 0.415 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/caution/master-caution.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m>  0.120 </y-m>
+      <z-m>  0.700 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- CANOPY caution --> 
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/caution/canopy-caution.xml</path>
+    <offsets>
+      <x-m> -3.615 </x-m>
+      <y-m> -0.295 </y-m>
+      <z-m>  0.390 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/caution/canopy-caution.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.290 </y-m>
+      <z-m>  0.660 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- FLAP/GEAR indicate --> 
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/flap-panel/flap-panel.xml</path>
+    <offsets>
+      <x-m> -3.610 </x-m>
+      <y-m> -0.287 </y-m>
+      <z-m>  0.327 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/flap-panel/flap-panel.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.287 </y-m>
+      <z-m>  0.597 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -3.607 </x-m>
+      <y-m> -0.309 </y-m>
+      <z-m> 0.304 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -1.990 </x-m>
+      <y-m> -0.309 </y-m>
+      <z-m> 0.570 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -3.607 </x-m>
+      <y-m> -0.268 </y-m>
+      <z-m> 0.304 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -1.990 </x-m>
+      <y-m> -0.268 </y-m>
+      <z-m> 0.570 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -3.607 </x-m>
+      <y-m> -0.288 </y-m>
+      <z-m> 0.322</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/Lights/nosegear-lamp.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.288 </y-m>
+      <z-m>  0.590</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/Lights/speed-brake-lamp.xml</path>
+    <offsets>
+       <x-m> -3.607 </x-m>
+      <y-m> -0.305 </y-m>
+      <z-m> 0.357</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/Lights/speed-brake-lamp.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.305 </y-m>
+      <z-m>  0.625</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- GEAR HANDLE -->
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/Landing-Gear/gearhandle.xml</path>
+    <offsets>
+       <x-m> -3.610 </x-m>
+      <y-m> -0.287 </y-m>
+      <z-m> 0.213 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/Landing-Gear/gearhandle.xml</path>
+    <offsets>
+      <x-m> -1.992 </x-m>
+      <y-m> -0.287 </y-m>
+      <z-m>  0.482 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--FuelGauge-->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+       <x-m> -3.615 </x-m>
+      <y-m> 0.124 </y-m>
+      <z-m> 0.187 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+      <x-m> -1.995 </x-m>
+      <y-m> 0.124 </y-m>
+      <z-m> 0.437 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--Pressure ALT-->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/pai/pai.xml</path>
+    <offsets>
+       <x-m> -3.615 </x-m>
+      <y-m> 0.210 </y-m>
+      <z-m> 0.127 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/pai/pai.xml</path>
+    <offsets>
+      <x-m> -1.995</x-m>
+      <y-m>  0.210 </y-m>
+      <z-m>  0.395 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- DG --> 
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/dg/dg.xml</path>
+    <offsets>
+      <x-m> -3.570 </x-m>
+      <y-m> 0.130 </y-m>
+      <z-m> 0.520 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/dg/dg.xml</path>
+    <offsets>
+      <x-m> -1.980 </x-m>
+      <y-m> 0.150 </y-m>
+      <z-m> 0.805 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- NAV SELECT -->
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/nav-lamp/nav-lamp.xml</path>
+    <offsets>
+       <x-m> -3.617 </x-m>
+      <y-m> 0.125 </y-m>
+      <z-m> 0.107</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/nav-lamp/nav-lamp.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.420 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- VHF/UHF -->
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/COMM/vhf_uhf.xml</path>
+    <offsets>
+       <x-m> -3.615 </x-m>
+      <y-m> -0.158 </y-m>
+      <z-m> 0.240</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/COMM/vhf_uhf.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.156 </y-m>
+      <z-m>  0.515</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- chronograph -->
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/chronograph/chronograph.xml</path>
+    <offsets>
+      <x-m> -3.615 </x-m>
+      <y-m> -0.230 </y-m>
+      <z-m> 0.133 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/chronograph/chronograph.xml</path>
+    <offsets>
+      <x-m> -1.993 </x-m>
+      <y-m> -0.225 </y-m>
+      <z-m>  0.408 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!-- landing-light-sw -->
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/landing-light-sw/landing-light-sw.xml</path>
+    <offsets>
+       <x-m> -3.610 </x-m>
+      <y-m> -0.300 </y-m>
+      <z-m> 0.133 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/landing-light-sw/landing-light-sw.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.300 </y-m>
+      <z-m>  0.410 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- anti-skid-sw -->
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/anti-skid-sw/anti-skid-sw.xml</path>
+    <offsets>
+       <x-m> -3.610 </x-m>
+      <y-m> -0.360 </y-m>
+      <z-m> 0.133 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/anti-skid-sw/anti-skid-sw.xml</path>
+    <offsets>
+      <x-m>-1.990 </x-m>
+      <y-m>-0.355 </y-m>
+      <z-m> 0.410 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- salvo -->
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/salvo/salvo.xml</path>
+    <offsets>
+       <x-m> -3.615 </x-m>
+      <y-m> -0.130 </y-m>
+      <z-m> 0.138 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/salvo/salvo.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.125 </y-m>
+      <z-m>  0.413 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- ENGINE STARTER -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/engine-starter/engine-starter.xml</path>
+    <offsets>
+       <x-m> -3.610 </x-m>
+      <y-m> -0.330 </y-m>
+      <z-m> 0.055 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/engine-starter/engine-starter.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.330 </y-m>
+      <z-m>  0.343 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <!-- AUTO-DROP -->
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/auto-drop/auto-drop.xml</path>
+    <offsets>
+      <x-m> -3.610 </x-m>
+      <y-m> -0.397 </y-m>
+      <z-m> -0.000 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/auto-drop/auto-drop.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.397 </y-m>
+      <z-m>  0.300 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <!-- BATT & GEN --> 
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/batt-gen/batt-gen.xml</path>
+    <offsets>
+      <x-m> -3.449 </x-m>
+      <y-m> 0.263 </y-m>
+      <z-m> 0.001 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/batt-gen/batt-gen.xml</path>
+    <offsets>
+      <x-m> -1.830 </x-m>
+      <y-m> 0.263 </y-m>
+      <z-m> 0.300 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <!-- FUEL PUMP -->
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/fuel-pump/fuel-pump.xml</path>
+    <offsets>
+      <x-m> -3.538 </x-m>
+      <y-m> -0.397 </y-m>
+      <z-m> -0.000 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/fuel-pump/fuel-pump.xml</path>
+    <offsets>
+      <x-m> -1.920 </x-m>
+      <y-m> -0.397 </y-m>
+      <z-m>  0.300 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <!-- FC AMP -->
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/fc-amp/fc-amp.xml</path>
+    <offsets>
+      <x-m> -3.601 </x-m>
+      <y-m> -0.430 </y-m>
+      <z-m> -0.000 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/fc-amp/fc-amp.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.430 </y-m>
+      <z-m>  0.300 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- thrust-lever -->
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/power_lever/power_lever.xml</path>
+    <offsets>
+      <x-m> -3.417 </x-m>
+      <y-m> -0.402 </y-m>
+      <z-m> -0.000</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/power_lever/power_lever.xml</path>
+    <offsets>
+      <x-m> -1.800 </x-m>
+      <y-m> -0.402 </y-m>
+      <z-m>  0.300</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- FLAP-SWITCH -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/flap-switch/flap_sw.xml</path>
+    <offsets>
+      <x-m> -3.270 </x-m>
+      <y-m> -0.420 </y-m>
+      <z-m> 0.080</z-m>
+      <roll-deg> -0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/flap-switch/flap_sw.xml</path>
+    <offsets>
+      <x-m> -1.640 </x-m>
+      <y-m> -0.420 </y-m>
+      <z-m>  0.380</z-m>
+      <roll-deg> -0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <!-- BIT -->
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/bit/bit.xml</path>
+    <offsets>
+      <x-m> -3.136 </x-m>
+      <y-m> -0.397 </y-m>
+      <z-m> -0.000 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/bit/bit.xml</path>
+    <offsets>
+      <x-m> -1.519 </x-m>
+      <y-m> -0.397 </y-m>
+      <z-m>  0.300 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- VOR/ILS  -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/COMM/VOR.xml</path>
+    <offsets>
+      <x-m> -2.998 </x-m>
+      <y-m> -0.332 </y-m>
+      <z-m> 0.0</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/COMM/VOR.xml</path>
+    <offsets>
+      <x-m> -1.380 </x-m>
+      <y-m> -0.332 </y-m>
+      <z-m> 0.300</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- TACAN  -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/tacan/tacan.xml</path>
+    <offsets>
+      <x-m> -2.922 </x-m>
+      <y-m> -0.332 </y-m>
+      <z-m> 0.0</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/tacan/tacan.xml</path>
+    <offsets>
+      <x-m> -1.304 </x-m>
+      <y-m> -0.332 </y-m>
+      <z-m>  0.300</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <!-- case-sw -->
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/case-sw/case-sw.xml</path>
+    <offsets>
+      <x-m> -3.600 </x-m>
+      <y-m> -0.430 </y-m>
+      <z-m> -0.000 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/case-sw/case-sw.xml</path>
+    <offsets>
+      <x-m> -1.520 </x-m>
+      <y-m> -0.430 </y-m>
+      <z-m>  0.300 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <!-- CANOPY LOCK LEVER -->
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/canopy-lock/canopy-lock.xml</path>
+    <offsets>
+      <x-m> -3.390 </x-m>
+      <y-m> -0.375 </y-m>
+      <z-m> 0.222 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- FUSE-PANEL  -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/fuse_panel/fuse_panel.xml</path>
+    <offsets>
+      <x-m> -2.884 </x-m>
+      <y-m> -0.332 </y-m>
+      <z-m> 0.0</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/fuse_panel/fuse_panel.xml</path>
+    <offsets>
+      <x-m> -1.266 </x-m>
+      <y-m> -0.332 </y-m>
+      <z-m>  0.300 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- ALT-SET  -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/alt-set/alt-set.xml</path>
+    <offsets>
+      <x-m> -2.905</x-m>
+      <y-m> -0.415 </y-m>
+      <z-m> 0.0</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/alt-set/alt-set.xml</path>
+    <offsets>
+      <x-m> -1.350 </x-m>
+      <y-m> -0.415 </y-m>
+      <z-m>  0.300   </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- RUD-TRIM  -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/rud_trim/rud_trim.xml</path>
+    <offsets>
+      <x-m> -3.148</x-m>
+      <y-m> -0.290 </y-m>
+      <z-m> 0.002</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/rud_trim/rud_trim.xml</path>
+    <offsets>
+      <x-m> -1.530</x-m>
+      <y-m> -0.290 </y-m>
+      <z-m> 0.302</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+ <!-- OXY REG -->
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/oxyreg/oxyreg.xml</path>
+    <offsets>
+      <x-m> -3.610 </x-m>
+      <y-m> 0.263 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/oxyreg/oxyreg.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> 0.263 </y-m>
+      <z-m> 0.300 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <!-- IFF -->
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/IFF/IFF.xml</path>
+    <offsets>
+      <x-m> -3.615 </x-m>
+      <y-m> -0.065 </y-m>
+      <z-m> 0.084 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   61 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/IFF/IFF.xml</path>
+    <offsets>
+      <x-m> -1.975 </x-m>
+      <y-m> -0.065 </y-m>
+      <z-m> 0.384 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   61 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <!-- INV -->
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/inv/inv.xml</path>
+    <offsets>
+      <x-m> -3.601 </x-m>
+      <y-m> 0.395 </y-m>
+      <z-m> -0.000 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/inv/inv.xml</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> 0.395 </y-m>
+      <z-m>  0.300 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <!-- AHRS -->
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/AHRS/ahrs.xml</path>
+    <offsets>
+      <x-m> -3.378 </x-m>
+      <y-m> 0.263 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/AHRS/ahrs.xml</path>
+    <offsets>
+      <x-m> -1.759 </x-m>
+      <y-m> 0.263 </y-m>
+      <z-m> 0.300 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <!-- ANTI-ICE -->
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/anti-ice/anti-ice.xml</path>
+    <offsets>
+      <x-m> -3.267 </x-m>
+      <y-m> 0.263 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>  0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/anti-ice/anti-ice.xml</path>
+    <offsets>
+      <x-m> -1.648 </x-m>
+      <y-m> 0.263 </y-m>
+      <z-m> 0.300 </z-m>
+      <roll-deg>  0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/LT/LT.xml</path>
+    <offsets>
+      <x-m> -3.165 </x-m>
+      <y-m> 0.333 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/LT/LT.xml</path>
+    <offsets>
+      <x-m> -1.547 </x-m>
+      <y-m> 0.333 </y-m>
+      <z-m> 0.300 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/EXT-LT/Ext-LT.xml</path>
+    <offsets>
+      <x-m> -3.220 </x-m>
+      <y-m> 0.394 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/EXT-LT/Ext-LT.xml</path>
+    <offsets>
+      <x-m> -1.620 </x-m>
+      <y-m> 0.394 </y-m>
+      <z-m> 0.300 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/temp/temp.xml</path>
+    <offsets>
+      <x-m> -3.034 </x-m>
+      <y-m> 0.333 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/temp/temp.xml</path>
+    <offsets>
+      <x-m> -1.415 </x-m>
+      <y-m> 0.333 </y-m>
+      <z-m> 0.300 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- FUNCTION PARTS -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/function_parts/function_parts.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/function_parts/function_parts.xml</path>
+    <offsets>
+      <x-m> 1.620 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0.300 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/ics/ics.xml</path>
+    <offsets>
+      <x-m> -3.020 </x-m>
+      <y-m> 0.394 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/ics/ics.xml</path>
+    <offsets>
+      <x-m> -1.455 </x-m>
+      <y-m> 0.394 </y-m>
+      <z-m> 0.300 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!--RADIO CALL PLATE-->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/radio-call/radio-call.ac</path>
+    <offsets>
+       <x-m> -3.615 </x-m>
+      <y-m> -0.205 </y-m>
+      <z-m> 0.383 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/radio-call/radio-call.ac</path>
+    <offsets>
+      <x-m> -1.990 </x-m>
+      <y-m> -0.200 </y-m>
+      <z-m> 0.660 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- LOW-ALT -->
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/alt-set/low-alt.xml</path>
+    <offsets>
+       <x-m> -3.575 </x-m>
+      <y-m> -0.150 </y-m>
+      <z-m> 0.515 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-4RD/Models/Interior/Panel/alt-set/low-alt.xml</path>
+    <offsets>
+      <x-m> -1.970 </x-m>
+      <y-m> -0.150 </y-m>
+      <z-m>  0.775 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+

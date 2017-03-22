@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="T-4RD-base.xml">
+
+  <sim>
+    <description>T-4 RedDolphin (YASim)</description>
+    <status>Ver.1.0</status>
+    <author>Hitoshi Uchida(3D/FDM) stella(Livery)</author>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">T-4RD-yasim</aero>
+
+  </sim>
+
+</PropertyList>
+
+
+

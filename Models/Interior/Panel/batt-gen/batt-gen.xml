@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>batt-gen.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>batt-switch</object-name>
+    <emission>
+      <red> 0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>base</object-name>
+    <object-name>batt-rot-UPR</object-name>
+    <object-name>batt-rot</object-name>
+    <object-name>gen-switch-RH</object-name>
+    <object-name>gen-switch-LH</object-name>
+    <object-name>gen-nut-RH</object-name>
+    <object-name>gen-nut-LH</object-name>
+    <object-name>gen-rot-RH</object-name>
+    <object-name>gen-rot-LH</object-name>
+    <object-name>gen-rot-UPR-RH</object-name>
+    <object-name>gen-rot-UPR-LH</object-name>
+    <object-name>case-RH</object-name>
+    <object-name>case-LH</object-name>
+    <emission>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>   
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>batt-switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/electric/battery-switch</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>batt-switch</object-name>
+    <property>controls/electric/battery-switch</property>
+    <factor>22.5</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.035 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+<!--   GEN-RH   -->
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>gen-switch-RH</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/electric/engine[0]/generator</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>gen-switch-RH</object-name>
+    <property>controls/electric/engine[0]/generator</property>
+    <factor>35</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.03 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>case-RH</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-toggle</command>
+	<property>controls/electric/engine/bus-tie</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>case-RH</object-name>
+    <property>controls/electric/engine/bus-tie</property>
+    <factor>90</factor>
+    <axis>
+      <x>  0 </x>
+      <y> 1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.053 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> -0.0 </z-m>
+    </center>
+  </animation>
+
+
+<!--   GEN-LH   -->
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>gen-switch-LH</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/electric/engine[1]/generator</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>gen-switch-LH</object-name>
+    <property>controls/electric/engine[1]/generator</property>
+    <factor>35</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.03 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>case-LH</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-toggle</command>
+	<property>controls/electric/engine[1]/bus-tie</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>case-LH</object-name>
+    <property>controls/electric/engine[1]/bus-tie</property>
+    <factor>90</factor>
+    <axis>
+      <x>  0 </x>
+      <y> 1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.053 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> -0.0 </z-m>
+    </center>
+  </animation>
+
+
+
+</PropertyList>
+
+
+

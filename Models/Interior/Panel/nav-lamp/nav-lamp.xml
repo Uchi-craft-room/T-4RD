@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>nav-lamp.ac</path>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vor</object-name>
+    <object-name>tacan</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>vor</object-name>
+    <object-name>tacan</object-name>
+    <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission> 
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>vor</object-name>
+    <condition>
+     <and>
+        <equals>
+            <property>instrumentation/dme/switch-position</property>
+            <value>1</value>
+        </equals>
+     <greater-than>
+	   <property>systems/electrical/volts</property>
+	   <value>24</value>
+     </greater-than>
+       </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>tacan</object-name>
+    <condition>
+     <and>
+        <equals>
+            <property>instrumentation/dme/switch-position</property>
+            <value>0</value>
+        </equals>
+     <greater-than>
+	   <property>systems/electrical/volts</property>
+	   <value>24</value>
+     </greater-than>
+       </and>
+    </condition>
+  </animation>
+
+<!-- -hotspots -->
+
+<animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>vor-set</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+                <command>nasal</command>
+                <script>dmesw.dme_step(1)</script>
+       </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>tacan-set</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+                <command>nasal</command>
+                <script>dmesw.dme_step(-1)</script>
+       </binding>
+    </action>
+</animation>
+
+
+<!-- marker becon lamp-->
+  <animation>
+    <type>select</type>
+    <object-name>light</object-name>
+    <condition>
+     <and>
+        <or>
+        <property>instrumentation/marker-beacon/inner</property>
+        <property>instrumentation/marker-beacon/middle</property>
+        <property>instrumentation/marker-beacon/outer</property>
+        </or>
+        <greater-than>
+	   <property>systems/electrical/volts</property>
+	   <value>24</value>
+        </greater-than>
+       </and>
+    </condition>
+  </animation>
+
+</PropertyList>
+
+
+
+

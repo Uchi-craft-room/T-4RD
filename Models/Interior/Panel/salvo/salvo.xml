@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>salvo.ac</path>
+
+
+  <animation>
+    <type>material</type>
+    <object-name>base</object-name>>
+    <object-name>Circle</object-name>
+    <object-name>Switch-Starter</object-name>
+    <object-name>CTR</object-name>
+    <object-name>L1</object-name>
+    <object-name>R1</object-name>
+    <emission>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>   
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+
+
+</PropertyList>
+
+
+

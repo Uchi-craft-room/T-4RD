@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>fuel-pump.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>base</object-name>
+    <object-name>case</object-name>
+    <object-name>case.001</object-name>
+    <object-name>switch</object-name>
+    <object-name>nut</object-name>
+    <object-name>rot</object-name>
+    <object-name>rot-UPR</object-name>
+    <object-name>switch.001</object-name>
+    <object-name>nut.001</object-name>
+    <object-name>rot.001</object-name>
+    <object-name>rot-UPR.001</object-name>
+    <object-name>switch.002</object-name>
+    <object-name>nut.002</object-name>
+    <object-name>rot.002</object-name>
+    <object-name>rot-UPR.002</object-name>
+    <object-name>switch.003</object-name>
+    <object-name>nut.003</object-name>
+    <object-name>rot.003</object-name>
+    <object-name>rot-UPR.003</object-name>
+    <object-name>switch.004</object-name>
+    <object-name>nut.004</object-name>
+    <object-name>rot.004</object-name>
+    <object-name>rot-UPR.004</object-name>
+    <emission>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>   
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+
+<!-- feed switch -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/fuel/engine/cross-feed</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>switch</object-name>
+    <property>controls/fuel/engine/cross-feed</property>
+    <factor>30</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.064 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.004 </z-m>
+    </center>
+  </animation>
+
+<!-- boost pump RH -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>switch.001</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/fuel/tank/boost-pump</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>switch.001</object-name>
+    <property>controls/fuel/tank/boost-pump</property>
+    <factor>-30</factor>
+    <axis>
+      <x>  0 </x>
+      <y> 1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.032 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.004 </z-m>
+    </center>
+  </animation>
+
+<!-- boost pump LH -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>switch.002</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/fuel/tank[1]/boost-pump</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/fuel/tank[2]/boost-pump</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>switch.002</object-name>
+    <property>controls/fuel/tank[1]/boost-pump</property>
+    <factor>-30</factor>
+    <axis>
+      <x>  0 </x>
+      <y> 1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.032 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.004 </z-m>
+    </center>
+  </animation>
+
+<!-- shut off RH -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>switch.003</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>consumables/fuel/tank[1]/selected</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>switch.003</object-name>
+    <property>consumables/fuel/tank[1]/selected</property>
+    <factor>-30</factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m> 0.084 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.004 </z-m>
+    </center>
+  </animation>
+
+<!-- case RH -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>case</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-toggle</command>
+	<property>controls/engines/engine/fuel-pump-case</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>case</object-name>
+    <property>controls/engines/engine/fuel-pump-case</property>
+    <factor>90</factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m> 0.106 </x-m>
+      <y-m> 0.00</y-m>
+      <z-m> 0.005 </z-m>
+    </center>
+   </animation>
+
+<!-- shut off LH -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>switch.004</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>consumables/fuel/tank[2]/selected</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>switch.004</object-name>
+    <property>consumables/fuel/tank[2]/selected</property>
+    <factor>-30</factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m> 0.084 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.004 </z-m>
+    </center>
+  </animation>
+
+<!-- case LH -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>case.001</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-toggle</command>
+	<property>controls/engines/engine[1]/fuel-pump-case</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>case.001</object-name>
+    <property>controls/engines/engine[1]/fuel-pump-case</property>
+    <factor>90</factor>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.106 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0.005 </z-m>
+    </center>
+  </animation>
+
+</PropertyList>

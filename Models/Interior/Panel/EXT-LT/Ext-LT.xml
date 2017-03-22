@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>Ext-LT.ac</path>
+    
+    <animation>
+       <type>range</type>
+       <min-m>0</min-m>
+       <max-m>5</max-m>
+    </animation>
+ 
+  <animation>
+ <object-name>base</object-name>
+  <object-name>freq.knob2</object-name>
+    <object-name>Switch</object-name>
+    <object-name>Circle</object-name>
+    <object-name>SwitchNut</object-name>
+    <object-name>SwitchRot</object-name>
+    <object-name>Switch.001</object-name>
+    <object-name>Circle.001</object-name>
+    <object-name>SwitchNut.001</object-name>
+    <object-name>SwitchRot.001</object-name>
+   <type>material</type>
+     <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.5</red>
+        <green>0.5</green>
+        <blue>0.5</blue>
+      </emission>
+  </animation>
+
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq.knob2</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/lighting/formation-lamp</property>
+            </binding>
+        </action>
+    </animation>
+
+
+    <animation>
+    <type>rotate</type>
+    <object-name>freq.knob2</object-name>
+    <property>controls/lighting/formation-lamp</property>
+    <factor>135</factor>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m>  0.006 </x-m>
+      <y-m>  0.017 </y-m>
+      <z-m>  -0.091 </z-m>
+    </center>
+    </animation>
+
+
+
+<!--  Switch  BEACON-->
+
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+	<property>controls/lighting/beacon</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Switch</object-name>
+      <property>controls/lighting/beacon</property>
+    <factor>35</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.018 </y-m>
+      <z-m> -0.140 </z-m>
+    </center>
+  </animation>
+
+
+<!--  Switch  NAV-LAMP-->
+
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Switch.001</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+	<property>controls/lighting/nav-lights</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Switch.001</object-name>
+      <property>controls/lighting/nav-lights</property>
+    <factor>35</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.018 </y-m>
+      <z-m> -0.044 </z-m>
+    </center>
+  </animation>
+
+</PropertyList>
+
+

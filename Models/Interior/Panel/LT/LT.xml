@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>LT.ac</path>
+    
+    <animation>
+       <type>range</type>
+       <min-m>0</min-m>
+       <max-m>5</max-m>
+    </animation>
+ 
+  <animation>
+ <object-name>base</object-name>
+  <object-name>freq.knob1</object-name>
+  <object-name>freq.knob2</object-name>
+  <object-name>freq.knob3</object-name>
+   <type>material</type>
+     <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.5</red>
+        <green>0.5</green>
+        <blue>0.5</blue>
+      </emission>
+  </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq.knob1</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/lighting/instrument-lights-norm</property>
+                <step>0.1</step>
+                <min>0</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq.knob1</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/lighting/instrument-lights-norm</property>
+                <step>-0.1</step>
+                <min>0</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq.knob2</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/lighting/instrument-lights-norm</property>
+                <step>0.1</step>
+                <min>0</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq.knob2</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/lighting/instrument-lights-norm</property>
+                <step>-0.1</step>
+                <min>0</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq.knob3</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/lighting/instrument-lights-norm</property>
+                <step>0.1</step>
+                <min>0</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq.knob3</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/lighting/instrument-lights-norm</property>
+                <step>-0.1</step>
+                <min>0</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>freq.knob1</object-name>
+    <property>controls/lighting/instrument-lights-norm</property>
+    <factor>270</factor>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m>  0.007 </x-m>
+      <y-m> -0.028 </y-m>
+      <z-m>  0.005 </z-m>
+    </center>
+    </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>freq.knob2</object-name>
+    <property>controls/lighting/instrument-lights-norm</property>
+    <factor>270</factor>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m>  0.007 </x-m>
+      <y-m>  0.024 </y-m>
+      <z-m>  0.005 </z-m>
+    </center>
+    </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>freq.knob3</object-name>
+    <property>controls/lighting/instrument-lights-norm</property>
+    <factor>270</factor>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m>  0.007 </x-m>
+      <y-m> -0.029 </y-m>
+      <z-m> -0.055 </z-m>
+    </center>
+    </animation>
+
+<!--  Switch  -->
+
+ <animation>
+    <type>material</type>
+    <object-name>Switch</object-name>
+    <object-name>Circle</object-name>
+    <object-name>SwitchNut</object-name>
+    <object-name>SwitchRot</object-name>
+    <emission>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+      <factor-prop>controls/electric/battery-switch</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-toggle</command>
+	<property>controls/lighting/panel-norm</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/instruments-norm</property>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+	<property>controls/lighting/instruments-norm</property>
+	<property>controls/lighting/panel-norm</property>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+ 	<property>controls/lighting/instruments-norm</property>
+	<property>controls/lighting/panel-norm</property>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/instrument-lights</property>
+    	<property>controls/lighting/instruments-norm</property>
+	<property>controls/lighting/panel-norm</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Switch</object-name>
+      <property>controls/lighting/instruments-norm</property>
+    <property>controls/lighting/panel-norm</property>
+    <factor>35</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.004 </x-m>
+      <y-m> 0.027 </y-m>
+      <z-m> -0.053 </z-m>
+    </center>
+  </animation>
+
+</PropertyList>
+
+
