@@ -47,6 +47,7 @@
     <object-name>mirror.glass</object-name>
   </animation>
 
+
   <animation>
     <type>noshadow</type>
     <object-name>canopy.glass.front</object-name>
@@ -94,6 +95,9 @@
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
     <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>Aircraft/T-4RD/Models/Liveries/Default.png</texture>
+    <shininess>128</shininess>
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
@@ -159,6 +163,7 @@
                 <property>/controls/seat/shade</property>
         </condition>
     </animation>
+
 
 
   <!--  OSG -->

@@ -4,8 +4,8 @@
 
   <sim>
     <description>T-4 RedDolphin (YASim)</description>
-    <status>Ver.1.0</status>
-    <author>Hitoshi Uchida(3D/FDM) stella(Livery)</author>
+    <long-description>Ver.1.2</long-description>
+    <author>Hitoshi Uchida 'HiTouch'(3D/FDM)</author>
     <flight-model archive="y">yasim</flight-model>
     <aero archive="y">T-4RD-yasim</aero>
 

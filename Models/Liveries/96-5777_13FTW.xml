@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <sim>
+    <model>
+	<livery>
+        <name type="string">96-5777_13FTW</name>
+        <texture>Liveries/96-5777_13FTW.png</texture>
+	</livery>
+	<livery-logo>
+	<texture>Liveries/96-5777_13FTW.png</texture>
+	</livery-logo>
+    </model>
+  </sim>
+</PropertyList>
+

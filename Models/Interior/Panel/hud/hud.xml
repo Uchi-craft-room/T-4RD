@@ -57,6 +57,116 @@
         <enable-hat>false</enable-hat>
     </ladder>
 
+
+
+  <tape>
+        <name>NAV BEARING gear up</name>
+        <x>-40</x>
+        <y>0</y>
+        <width>80</width>
+        <height>40</height>
+        <condition>
+        <and>
+            <equals>
+               <property>instrumentation/dme/switch-position</property>
+               <value>1</value>
+            </equals>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+         </greater-than>
+           <not>
+              <equals>
+                <property>instrumentation/nav/crosstrack-heading-error-deg</property>
+                <value>0</value>
+              </equals>
+           </not>
+         </and>
+        </condition>
+        <input>
+            <property>/instrumentation/nav/nav-needle-error-deg</property>
+            <factor>-1</factor>
+            <max>14.5</max>
+            <min>-14.5</min>
+        </input>
+        <display-span>31</display-span>
+        <option>top</option>
+        <option>notext</option>
+        <major-divisions>20</major-divisions>
+        <minor-divisions>0</minor-divisions>
+        <tick-bottom>true</tick-bottom>
+        <tick-top>true</tick-top>
+        <tick-right>false</tick-right>
+        <tick-left>false</tick-left>
+        <cap-bottom>false</cap-bottom>
+        <cap-top>false</cap-top>
+        <cap-right>true</cap-right>
+        <cap-left>true</cap-left>
+        <marker-offset>0</marker-offset>
+        <enable-pointer>false</enable-pointer>
+        <pointer-type>fixed</pointer-type>
+        <tick-type>line</tick-type>
+        <tick-length>variable</tick-length>
+    </tape>
+
+
+
+
+
+    <tape>
+        <name>TACAN BEARING </name>
+        <x>-40</x>
+        <y>0</y>
+        <width>80</width>
+        <height>40</height>
+        <condition>
+        <and>
+            <equals>
+               <property>instrumentation/dme/switch-position</property>
+               <value>0</value>
+            </equals>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+         </greater-than>
+           <not>
+              <equals>
+                <property>instrumentation/tacan/indicated-distance-nm</property>
+                <value>0</value>
+              </equals>
+           </not>
+         </and>
+        </condition>
+        <input>
+            <property>/instrumentation/tacan/tacan-needle-error-deg</property>
+            <factor>-1</factor>
+            <max>14.5</max>
+            <min>-14.5</min>
+        </input>
+        <display-span>31</display-span>
+        <option>top</option>
+        <option>notext</option>
+        <major-divisions>20</major-divisions>
+        <minor-divisions>0</minor-divisions>
+        <tick-bottom>true</tick-bottom>
+        <tick-top>true</tick-top>
+        <tick-right>false</tick-right>
+        <tick-left>false</tick-left>
+        <cap-bottom>false</cap-bottom>
+        <cap-top>false</cap-top>
+        <cap-right>true</cap-right>
+        <cap-left>true</cap-left>
+        <marker-offset>0</marker-offset>
+        <enable-pointer>false</enable-pointer>
+        <pointer-type>fixed</pointer-type>
+        <tick-type>line</tick-type>
+        <tick-length>variable</tick-length>
+    </tape>
+
+
+
+
+
     <tape>
         <name>Altitude-MSL gear-up</name>
         <x>53</x>
@@ -497,24 +607,56 @@
     </gauge>
 
     <tape>
+        <name>glide-slope</name>
+        <x> -25 </x>
+        <y>-160</y>
+        <width>50</width>
+        <height>180</height>
+
+        <condition>
+           <and>
+            <property>instrumentation/nav/gs-in-range</property>
+            <property>instrumentation/nav/has-gs</property>
+           </and>
+        </condition>
+
+        <input>
+            <property>instrumentation/nav[0]/gs-needle-deflection</property>
+            <factor>-1</factor>
+            <max>10</max>
+            <min>-10</min>
+        </input>
+        <display-span>20</display-span>
+        <option>vertical</option>
+        <option>notext</option>
+        <major-divisions>20</major-divisions>
+        <minor-divisions>0</minor-divisions>
+        <tick-bottom>false</tick-bottom>
+        <tick-top>false</tick-top>
+        <tick-right>true</tick-right>
+        <tick-left>true</tick-left>
+        <cap-bottom>false</cap-bottom>
+        <cap-top>false</cap-top>
+        <cap-right>false</cap-right>
+        <cap-left>false</cap-left>
+        <marker-offset>0</marker-offset>
+        <enable-pointer>false</enable-pointer>
+        <pointer-type>fixed</pointer-type>
+        <tick-type>line</tick-type>
+        <tick-length>variable</tick-length>
+    </tape>
+
+    <tape>
         <name>localizer</name>
         <x>-50</x>
-        <y>-5</y>
+        <y>-100</y>
         <width>100</width>
-        <height>40</height>
+        <height>100</height>
         <condition>
-        <and>
-         <greater-than>
-            <property>systems/electrical/volts</property>
-            <value>16</value>
-         </greater-than>
-           <not>
-              <equals>
-                <property>instrumentation/nav/crosstrack-heading-error-deg</property>
-                <value>0</value>
-              </equals>
-           </not>
-         </and>
+           <and>
+            <property>instrumentation/nav/gs-in-range</property>
+            <property>instrumentation/nav/has-gs</property>
+           </and>
         </condition>
 
         <input>
@@ -825,6 +967,85 @@
         </condition>
     </label>
 
+    <label>
+        <name>DME miles NAV</name>
+        <x>75</x>
+        <y>-113</y>
+        <width>1</width>
+        <height>1</height>
+        <condition>
+        <and>
+            <equals>
+               <property>instrumentation/dme/switch-position</property>
+               <value>1</value>
+            </equals>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+         </greater-than>
+           <not>
+              <equals>
+                <property>instrumentation/tacan/indicated-distance-nm</property>
+                <value>0</value>
+              </equals>
+           </not>
+         </and>
+        </condition>
+        <format>NAV</format>
+        <halign>right</halign>
+    </label>
+
+
+    <label>
+        <name>DME miles TCN</name>
+        <x>75</x>
+        <y>-113</y>
+        <width>1</width>
+        <height>1</height>
+        <condition>
+        <and>
+            <equals>
+               <property>instrumentation/dme/switch-position</property>
+               <value>0</value>
+            </equals>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+         </greater-than>
+           <not>
+              <equals>
+                <property>instrumentation/tacan/indicated-distance-nm</property>
+                <value>0</value>
+              </equals>
+           </not>
+         </and>
+        </condition>
+        <format>TCN</format>
+        <halign>right</halign>
+    </label>
+
+    <label>
+        <name>DME miles ILS</name>
+        <x>60</x>
+        <y>-113</y>
+        <width>1</width>
+        <height>1</height>
+        <condition>
+           <and>
+            <property>instrumentation/nav/gs-in-range</property>
+            <property>instrumentation/nav/has-gs</property>
+            <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+            </greater-than>
+           </and>
+        </condition>
+        <format>ILS</format>
+        <halign>right</halign>
+    </label>
+
+
+
     <ladder>
         <name>PULL_UP1</name>
         <type>pitch</type>
@@ -984,46 +1205,8 @@
          <property>2</property>
       </diameter-input>
      </aiming-reticle>
-
-    <tape>
-        <name>glide-slope</name>
-        <x> -12.5 </x>
-        <y>-120</y>
-        <width>25</width>
-        <height>100</height>
-
-        <condition>
-           <and>
-            <property>instrumentation/nav/gs-in-range</property>
-            <property>instrumentation/nav/has-gs</property>
-           </and>
-        </condition>
-
-        <input>
-            <property>instrumentation/nav[0]/gs-needle-deflection</property>
-            <factor>-1</factor>
-            <max>10</max>
-            <min>-10</min>
-        </input>
-        <display-span>20</display-span>
-        <option>vertical</option>
-        <option>notext</option>
-        <major-divisions>20</major-divisions>
-        <minor-divisions>0</minor-divisions>
-        <tick-bottom>false</tick-bottom>
-        <tick-top>false</tick-top>
-        <tick-right>true</tick-right>
-        <tick-left>true</tick-left>
-        <cap-bottom>false</cap-bottom>
-        <cap-top>false</cap-top>
-        <cap-right>false</cap-right>
-        <cap-left>false</cap-left>
-        <marker-offset>0</marker-offset>
-        <enable-pointer>false</enable-pointer>
-        <pointer-type>fixed</pointer-type>
-        <tick-type>line</tick-type>
-        <tick-length>variable</tick-length>
-    </tape>
 -->
+
+
 
 </PropertyList>
