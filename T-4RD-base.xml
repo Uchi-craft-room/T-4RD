@@ -6,10 +6,6 @@
 
     <fuel-fraction>1.0</fuel-fraction>
 
-    <startup>
-      <splash-texture>Aircraft/T-4RD/T-4RD-splash.jpg</splash-texture>
-    </startup>
-
     <sound>
       <path archive="y">Aircraft/T-4RD/Sounds/T-4RD-sound.xml</path>
     </sound>
@@ -121,6 +117,7 @@
     <T-4RD>
       <file>Aircraft/T-4RD/Nasal/electrical.nas</file>
       <file>Aircraft/T-4RD/Nasal/light.nas</file>
+      <file>Aircraft/T-4RD/Nasal/light-manager.nas</file>
       <file>Aircraft/T-4RD/Nasal/liveries.nas</file>
       <file>Aircraft/T-4RD/Nasal/immat.nas</file>
       <file>Aircraft/T-4RD/Nasal/instruments.nas</file>
